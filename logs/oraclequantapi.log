@@ -4572,3 +4572,162 @@ oracle.jdbc.OracleDatabaseException: ORA-01400: cannot insert NULL into ("ORACLE
 2026-06-08T16:47:05.561+04:00  INFO 29232 --- [oraclequantapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-08T16:47:05.563+04:00  INFO 29232 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-06-08T16:47:05.602+04:00  INFO 29232 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-08T18:01:07.972+04:00  INFO 32120 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplicationTests     : Starting OraclequantapiApplicationTests using Java 17.0.14 with PID 32120 (started by kinda in C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi)
+2026-06-08T18:01:07.974+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplicationTests     : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-08T18:01:07.974+04:00  INFO 32120 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2026-06-08T18:01:08.414+04:00  INFO 32120 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08T18:01:08.452+04:00  INFO 32120 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2026-06-08T18:01:08.833+04:00  INFO 32120 --- [oraclequantapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08T18:01:08.895+04:00  INFO 32120 --- [oraclequantapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-06-08T18:01:08.928+04:00  INFO 32120 --- [oraclequantapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-08T18:01:09.215+04:00  INFO 32120 --- [oraclequantapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08T18:01:09.241+04:00  INFO 32120 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-08T18:01:09.609+04:00  INFO 32120 --- [oraclequantapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7f8c48f3
+2026-06-08T18:01:09.611+04:00  INFO 32120 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-08T18:01:09.719+04:00  WARN 32120 --- [oraclequantapi] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08T18:01:10.383+04:00  INFO 32120 --- [oraclequantapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08T18:01:10.717+04:00  INFO 32120 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:01:11.333+04:00  INFO 32120 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplicationTests     : Started OraclequantapiApplicationTests in 3.609 seconds (process running for 4.377)
+2026-06-08T18:01:11.879+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Stopping at consecutive separators for input '  _'
+2026-06-08T18:01:11.880+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Stopping at consecutive separators for input '_  _'
+2026-06-08T18:01:11.882+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Invalid input 'z ab_': malformed package count at index 0
+2026-06-08T18:01:11.884+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Invalid input 'ba za': malformed package value at index 2
+2026-06-08T18:01:11.886+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Invalid input 'za@bcd': malformed package value at index 2
+2026-06-08T18:01:11.888+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Invalid input 'za!': malformed package value at index 2
+2026-06-08T18:01:11.889+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Stopping at consecutive separators for input 'ab_  ab_'
+2026-06-08T18:01:11.890+04:00 DEBUG 32120 --- [oraclequantapi] [main] c.o.o.service.MeasurementService         : Stopping at consecutive separators for input 'ab_   ab_'
+2026-06-08T18:01:11.969+04:00  INFO 32120 --- [oraclequantapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:01:11.972+04:00  INFO 32120 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-08T18:01:11.997+04:00  INFO 32120 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-08T18:01:27.437+04:00  INFO 32496 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Starting OraclequantapiApplication using Java 17.0.14 with PID 32496 (C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi\target\classes started by kinda in C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi)
+2026-06-08T18:01:27.442+04:00 DEBUG 32496 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-08T18:01:27.442+04:00  INFO 32496 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-08T18:01:27.811+04:00  INFO 32496 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08T18:01:27.854+04:00  INFO 32496 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2026-06-08T18:01:28.247+04:00  INFO 32496 --- [oraclequantapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-08T18:01:28.262+04:00  INFO 32496 --- [oraclequantapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-08T18:01:28.263+04:00  INFO 32496 --- [oraclequantapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-08T18:01:28.316+04:00  INFO 32496 --- [oraclequantapi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-08T18:01:28.317+04:00  INFO 32496 --- [oraclequantapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 847 ms
+2026-06-08T18:01:28.490+04:00  INFO 32496 --- [oraclequantapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08T18:01:28.531+04:00  INFO 32496 --- [oraclequantapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-06-08T18:01:28.550+04:00  INFO 32496 --- [oraclequantapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-08T18:01:28.738+04:00  INFO 32496 --- [oraclequantapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08T18:01:28.758+04:00  INFO 32496 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-08T18:01:29.003+04:00  INFO 32496 --- [oraclequantapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@52c46334
+2026-06-08T18:01:29.005+04:00  INFO 32496 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-08T18:01:29.124+04:00  WARN 32496 --- [oraclequantapi] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08T18:01:29.765+04:00  INFO 32496 --- [oraclequantapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08T18:01:30.028+04:00  INFO 32496 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:01:30.401+04:00  WARN 32496 --- [oraclequantapi] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-08T18:01:30.402+04:00  INFO 32496 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:01:30.404+04:00  INFO 32496 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-08T18:01:30.428+04:00  INFO 32496 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-08T18:01:30.439+04:00  INFO 32496 --- [oraclequantapi] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08T18:01:30.456+04:00 ERROR 32496 --- [oraclequantapi] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-06-08T18:02:47.450+04:00  INFO 18500 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Starting OraclequantapiApplication using Java 17.0.14 with PID 18500 (C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi\target\classes started by kinda in C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi)
+2026-06-08T18:02:47.451+04:00 DEBUG 18500 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-08T18:02:47.451+04:00  INFO 18500 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-08T18:02:47.789+04:00  INFO 18500 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08T18:02:47.829+04:00  INFO 18500 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-06-08T18:02:48.133+04:00  INFO 18500 --- [oraclequantapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-08T18:02:48.141+04:00  INFO 18500 --- [oraclequantapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-08T18:02:48.141+04:00  INFO 18500 --- [oraclequantapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-08T18:02:48.187+04:00  INFO 18500 --- [oraclequantapi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-08T18:02:48.188+04:00  INFO 18500 --- [oraclequantapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 713 ms
+2026-06-08T18:02:48.309+04:00  INFO 18500 --- [oraclequantapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08T18:02:48.341+04:00  INFO 18500 --- [oraclequantapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-06-08T18:02:48.369+04:00  INFO 18500 --- [oraclequantapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-08T18:02:48.508+04:00  INFO 18500 --- [oraclequantapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08T18:02:48.525+04:00  INFO 18500 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-08T18:02:48.712+04:00  INFO 18500 --- [oraclequantapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5280688
+2026-06-08T18:02:48.713+04:00  INFO 18500 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-08T18:02:48.800+04:00  WARN 18500 --- [oraclequantapi] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08T18:02:49.356+04:00  INFO 18500 --- [oraclequantapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08T18:02:49.508+04:00  INFO 18500 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:02:49.856+04:00  WARN 18500 --- [oraclequantapi] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-08T18:02:49.856+04:00  INFO 18500 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:02:49.858+04:00  INFO 18500 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-08T18:02:49.879+04:00  INFO 18500 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-08T18:02:49.889+04:00  INFO 18500 --- [oraclequantapi] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08T18:02:49.899+04:00 ERROR 18500 --- [oraclequantapi] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-06-08T18:06:41.848+04:00  INFO 24752 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Starting OraclequantapiApplication using Java 17.0.14 with PID 24752 (C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi\target\classes started by kinda in C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi)
+2026-06-08T18:06:41.849+04:00 DEBUG 24752 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-08T18:06:41.850+04:00  INFO 24752 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-08T18:06:42.187+04:00  INFO 24752 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08T18:06:42.233+04:00  INFO 24752 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2026-06-08T18:06:42.552+04:00  INFO 24752 --- [oraclequantapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-08T18:06:42.561+04:00  INFO 24752 --- [oraclequantapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-08T18:06:42.562+04:00  INFO 24752 --- [oraclequantapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-08T18:06:42.602+04:00  INFO 24752 --- [oraclequantapi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-08T18:06:42.602+04:00  INFO 24752 --- [oraclequantapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 727 ms
+2026-06-08T18:06:42.726+04:00  INFO 24752 --- [oraclequantapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08T18:06:42.759+04:00  INFO 24752 --- [oraclequantapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-06-08T18:06:42.783+04:00  INFO 24752 --- [oraclequantapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-08T18:06:42.931+04:00  INFO 24752 --- [oraclequantapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08T18:06:42.949+04:00  INFO 24752 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-08T18:06:43.168+04:00  INFO 24752 --- [oraclequantapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6546371
+2026-06-08T18:06:43.170+04:00  INFO 24752 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-08T18:06:43.255+04:00  WARN 24752 --- [oraclequantapi] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08T18:06:43.818+04:00  INFO 24752 --- [oraclequantapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08T18:06:43.979+04:00  INFO 24752 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:06:44.314+04:00  INFO 24752 --- [oraclequantapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-06-08T18:06:44.320+04:00  INFO 24752 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Started OraclequantapiApplication in 2.771 seconds (process running for 2.988)
+2026-06-08T18:06:55.195+04:00  INFO 24752 --- [oraclequantapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:06:55.196+04:00  INFO 24752 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-08T18:06:55.216+04:00  INFO 24752 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-08T18:07:21.338+04:00  INFO 29876 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Starting OraclequantapiApplication using Java 17.0.14 with PID 29876 (C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi\target\classes started by kinda in C:\Users\kinda\OneDrive - yay app\Desktop\Java\oraclequantapi)
+2026-06-08T18:07:21.339+04:00 DEBUG 29876 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-08T18:07:21.340+04:00  INFO 29876 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-06-08T18:07:21.678+04:00  INFO 29876 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-08T18:07:21.734+04:00  INFO 29876 --- [oraclequantapi] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2026-06-08T18:07:22.059+04:00  INFO 29876 --- [oraclequantapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-08T18:07:22.068+04:00  INFO 29876 --- [oraclequantapi] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-08T18:07:22.069+04:00  INFO 29876 --- [oraclequantapi] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-08T18:07:22.127+04:00  INFO 29876 --- [oraclequantapi] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-08T18:07:22.128+04:00  INFO 29876 --- [oraclequantapi] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2026-06-08T18:07:22.245+04:00  INFO 29876 --- [oraclequantapi] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-08T18:07:22.277+04:00  INFO 29876 --- [oraclequantapi] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-06-08T18:07:22.299+04:00  INFO 29876 --- [oraclequantapi] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-08T18:07:22.448+04:00  INFO 29876 --- [oraclequantapi] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-08T18:07:22.465+04:00  INFO 29876 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-08T18:07:22.659+04:00  INFO 29876 --- [oraclequantapi] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@100d0218
+2026-06-08T18:07:22.660+04:00  INFO 29876 --- [oraclequantapi] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-08T18:07:22.746+04:00  WARN 29876 --- [oraclequantapi] [main] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-08T18:07:23.282+04:00  INFO 29876 --- [oraclequantapi] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-08T18:07:23.487+04:00  INFO 29876 --- [oraclequantapi] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:07:23.829+04:00  INFO 29876 --- [oraclequantapi] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-06-08T18:07:23.835+04:00  INFO 29876 --- [oraclequantapi] [main] c.o.o.OraclequantapiApplication          : Started OraclequantapiApplication in 2.831 seconds (process running for 3.047)
+2026-06-08T18:07:29.753+04:00  INFO 29876 --- [oraclequantapi] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-08T18:07:29.755+04:00  INFO 29876 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-08T18:07:29.773+04:00  INFO 29876 --- [oraclequantapi] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
