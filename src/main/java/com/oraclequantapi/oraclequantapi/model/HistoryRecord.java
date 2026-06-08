@@ -1,53 +1,45 @@
 package com.oraclequantapi.oraclequantapi.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
+/**
+ * Persistent record of a single {@code /convert-measurements} request, stored in Oracle XE.
+ */
+@Entity
+@Table(name = "HISTORY_RECORD")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class HistoryRecord {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Long id;
-    private String symbol;
-    private double value;
+
+    @Column(name = "REQUEST_TIMESTAMP", nullable = false)
     private LocalDateTime timestamp;
 
-    public HistoryRecord() {
-    }
+    @Column(name = "SOURCE_IP_ADDRESS", length = 64, nullable = false)
+    private String sourceIpAddress;
 
-    public HistoryRecord(Long id, String symbol, double value, LocalDateTime timestamp) {
-        this.id = id;
-        this.symbol = symbol;
-        this.value = value;
-        this.timestamp = timestamp;
-    }
+    @Column(name = "INPUT_TEXT", length = 4000, nullable = false)
+    private String input;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getSymbol() {
-        return symbol;
-    }
-
-    public void setSymbol(String symbol) {
-        this.symbol = symbol;
-    }
-
-    public double getValue() {
-        return value;
-    }
-
-    public void setValue(double value) {
-        this.value = value;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(LocalDateTime timestamp) {
-        this.timestamp = timestamp;
-    }
+    @Column(name = "OUTPUT_TEXT", length = 4000, nullable = false)
+    private String output;
 }
